@@ -2,12 +2,12 @@ import React from 'react'
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table'
-import './Headbar.scss'
+import './Room.scss'
 const Controler = (props) => {
     return (
         <Container className='col'>
             <div className="head-bar pt-5 d-flex justify-content-between">
-                <span className='mt-1 text-uppercase fw-bold fs-4'>Danh sách thiết bị</span>
+                <span className='mt-1 text-uppercase fw-bold fs-4'>Bảng hiển thị</span>
                 <Button variant="outline-warning fw-bold  btn-sm opacity-75"><i class="bi fa-3x bi-plus"></i>Thêm thiết bị</Button>{' '}
             </div>
             <div className="badge-button mt-3 gx-3">

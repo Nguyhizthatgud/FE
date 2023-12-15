@@ -1,35 +1,45 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
+import Tooltip from '@mui/material/Tooltip';
+import { Link } from 'react-router-dom';
 import './Bar.scss'
 function Bar() {
     return (
         <div className="bg-body-tertiary col-lg-auto col-sm-1 d-flex flex-column justify-content-between  min-vh-100 border border-right p-0">
             <Container className=''>
                 <Navbar.Brand href="#home" className="d-flex justify-content-center mt-3">
-                    <img
-                        alt="logo"
-                        src="logo1.png"
-                        width="40"
+                    <Tooltip title="Logo" placement="right">
+                        <img
+                            alt="logo"
+                            src="logo1.png"
+                            width="40"
 
-                    />{' '}
+                        />{' '}
+                    </Tooltip>
                 </Navbar.Brand>
+
                 <hr />
                 <ul className='nav nav-pills flex-column flex-column-shrink-0'>
                     <li className='nav-item'>
-                        <a href="#control" className='nav-link d-flex justify-content-center active' aria-current='page'><i className="bi fa-3x bi-house"></i></a>
+                        <Tooltip title="Vị trí" placement="right">
+                            <Link to={"/"} className='nav-link d-flex justify-content-center active' aria-current='page'><i className="bi fa-3x bi-house"></i></Link>
+                        </Tooltip>
                     </li>
                     <li className='nav-item'>
-                        <a href="#control" className='nav-link d-flex justify-content-center ' aria-current='page'><i className="bi fa-3x bi-speedometer2"></i></a>
+                        <Tooltip title="Danh sách thiết bị" placement="right">
+                            <Link to={"/devices"} className='nav-link d-flex justify-content-center ' aria-current='page'><i className="bi fa-3x bi-table"></i></Link>
+                        </Tooltip>
                     </li>
                     <li className='nav-item'>
-                        <a href="#control" className='nav-link d-flex justify-content-center ' aria-current='page'><i className="bi fa-3x bi-table"></i></a>
+                        <Tooltip title="Thông tin xác thực" placement="right">
+                            <Link to={"/credential"} className='nav-link  d-flex justify-content-center' aria-current='page'><i className="bi fa-3x bi-database"></i></Link>
+                        </Tooltip>
                     </li>
                     <li className='nav-item'>
-                        <a href="#control" className='nav-link  d-flex justify-content-center' aria-current='page'><i className="bi fa-3x bi-database"></i></a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href="#control" className='nav-link d-flex justify-content-center' aria-current='page'><i className="bi fa-3x bi-circle-half"></i></a>
+                        <Tooltip title="Sáng/tối" placement="right">
+                            <Link href="#lightmode" className='nav-link d-flex justify-content-center' aria-current='page'><i className="bi fa-3x bi-circle-half"></i></Link>
+                        </Tooltip>
                     </li>
                 </ul>
 

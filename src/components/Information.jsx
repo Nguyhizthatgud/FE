@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Information.scss'
+
+
 function Information() {
+    const [currentTime, setCurrentTime] = useState(new Date());
+    useEffect(() => {
+        setInterval(() => setCurrentTime(new Date()), 1000)
+    }, [])
     return (
-        <div className=" col-md-2 col-lg-3 col-ms-1  d-flex flex-column flex-nowrap bg-warning-subtle border-end" >
+        <div className=" col-md-2 col-lg-3 col-ms-1  d-flex flex-column flex-nowrap bg-warning-subtle border-end position-relative" >
             <h2 className='filer-listname h3 p-0 mt-lg-4 mt-md-3 mb-1 fw-semibold'>Bảng <span className='text-warning text-opacity-75'>điều khiển</span></h2>
             <div className='filer-list d-flex flex-column' >
                 <div className="search-filerbox g-4 pt-5 d-flex flex-column">
@@ -33,6 +39,10 @@ function Information() {
                         <div className='fs-6 p-1'>Vai Trò <p></p></div>
                     </div>
                 </div>
+            </div>
+            <div className='d-flex'>
+                <p className='flex-grow-1 position-absolute bottom-0 start-0 mx-3 fw-semibold'>{currentTime.toLocaleDateString()}</p>
+                <p className='position-absolute bottom-0 end-0 mx-3 fw-semibold'>{currentTime.toLocaleTimeString()}</p>
             </div>
 
         </div>
