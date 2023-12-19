@@ -23,22 +23,22 @@ function Bar() {
                 <ul className='nav nav-pills flex-column flex-column-shrink-0'>
                     <li className='nav-item'>
                         <Tooltip title="Vị trí" placement="right">
-                            <Link to={"/"} className='nav-link d-flex justify-content-center active' aria-current='page'><i className="bi fa-3x bi-house"></i></Link>
+                            <Link to={"/room"} className='nav-link d-flex justify-content-center active' aria-current='page'><i className="bi bi-house"></i></Link>
                         </Tooltip>
                     </li>
                     <li className='nav-item'>
                         <Tooltip title="Danh sách thiết bị" placement="right">
-                            <Link to={"/devices"} className='nav-link d-flex justify-content-center ' aria-current='page'><i className="bi fa-3x bi-table"></i></Link>
+                            <Link to={"/devices"} className='nav-link d-flex justify-content-center ' aria-current='page'><i className="bi  bi-table"></i></Link>
                         </Tooltip>
                     </li>
                     <li className='nav-item'>
                         <Tooltip title="Thông tin xác thực" placement="right">
-                            <Link to={"/credential"} className='nav-link  d-flex justify-content-center' aria-current='page'><i className="bi fa-3x bi-database"></i></Link>
+                            <Link to={"/credential"} className='nav-link  d-flex justify-content-center' aria-current='page'><i className="bi bi-database"></i></Link>
                         </Tooltip>
                     </li>
                     <li className='nav-item'>
                         <Tooltip title="Sáng/tối" placement="right">
-                            <Link href="#lightmode" className='nav-link d-flex justify-content-center' aria-current='page'><i className="bi fa-3x bi-circle-half"></i></Link>
+                            <Link href="#lightmode" className='nav-link d-flex justify-content-center' aria-current='page'><i className="bi bi-circle-half"></i></Link>
                         </Tooltip>
                     </li>
                 </ul>
@@ -49,7 +49,7 @@ function Bar() {
             <div className="dropdown-center open d-flex flex-shrink-0 mb-3 mx-auto" data-bs-theme="dark">
                 <a className="member text-decoration-none dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
-                    <i className="bi fa-5x bi-person-circle"></i>
+                    <i className="bi bi-person-circle"></i>
                 </a>
                 <div className="dropdown-menu " aria-labelledby="triggerId">
                     <a className="dropdown-item" href="#">New project...</a>
