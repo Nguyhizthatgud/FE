@@ -8,32 +8,34 @@ function Bar() {
     return (
         <div className="bg-body-tertiary col-lg-auto col-sm-1 d-flex flex-column justify-content-between  min-vh-100 border border-right p-0">
             <Container className=''>
-                <Navbar.Brand href="#home" className="d-flex justify-content-center mt-3">
-                    <Tooltip title="Logo" placement="right">
-                        <img
-                            alt="logo"
-                            src="logo1.png"
-                            width="40"
+                <Link to='/'>
+                    <Navbar.Brand href="" className="d-flex justify-content-center mt-3">
+                        <Tooltip title="Logo" placement="right">
+                            <img
+                                alt="logo"
+                                src="logo1.png"
+                                width="40"
 
-                        />{' '}
-                    </Tooltip>
-                </Navbar.Brand>
+                            />{' '}
+                        </Tooltip>
+                    </Navbar.Brand>
+                </Link>
 
                 <hr />
                 <ul className='nav nav-pills flex-column flex-column-shrink-0'>
                     <li className='nav-item'>
                         <Tooltip title="Vị trí" placement="right">
-                            <Link to={"/room"} className='nav-link d-flex justify-content-center active' aria-current='page'><i className="bi bi-house"></i></Link>
+                            <Link to={"/dashboard"} className='nav-link d-flex justify-content-center active' aria-current='page'><i className="bi bi-house"></i></Link>
                         </Tooltip>
                     </li>
                     <li className='nav-item'>
                         <Tooltip title="Danh sách thiết bị" placement="right">
-                            <Link to={"/devices"} className='nav-link d-flex justify-content-center ' aria-current='page'><i className="bi  bi-table"></i></Link>
+                            <Link to={"/dashboard/devices"} className='nav-link d-flex justify-content-center ' aria-current='page'><i className="bi  bi-table"></i></Link>
                         </Tooltip>
                     </li>
                     <li className='nav-item'>
                         <Tooltip title="Thông tin xác thực" placement="right">
-                            <Link to={"/credential"} className='nav-link  d-flex justify-content-center' aria-current='page'><i className="bi bi-database"></i></Link>
+                            <Link to={"/dashboard/credential"} className='nav-link  d-flex justify-content-center' aria-current='page'><i className="bi bi-database"></i></Link>
                         </Tooltip>
                     </li>
                     <li className='nav-item'>

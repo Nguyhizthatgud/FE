@@ -10,21 +10,23 @@ import Updateroom from '../Crudtable/Updateroom';
 import { Routes, Route } from 'react-router-dom'
 function Dashboard() {
     return (
+        <div className='container-fluid'>
+            <div className="row gy-auto">
+                <Bar />
+                <Information />
 
-        <div className="row gy-auto">
-            <Bar />
-            <Information />
-
-            <Routes>
+                {/* <Routes>
                 <Route path="/room" element={<Room />} />
                 <Route path="/createroom" element={<Createroom />} />
                 <Route path="/updateroom" element={<Updateroom />} />
                 <Route path="/controler" element={<Controler />} />
                 <Route path="/devices" element={<Devices />} />
                 <Route path="/credential" element={<Credential />} />
-            </Routes>
+            </Routes> */}
 
+            </div>
         </div>
+
     )
 }
 
