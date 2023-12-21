@@ -14,7 +14,7 @@ function Dashboard() {
             <div className="row gy-auto">
                 <Bar />
                 <Information />
-
+                <Room />
                 {/* <Routes>
                 <Route path="/room" element={<Room />} />
                 <Route path="/createroom" element={<Createroom />} />

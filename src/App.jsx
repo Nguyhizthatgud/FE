@@ -6,26 +6,68 @@ import Devices from './components/Dashboard/Devices';
 import Credential from './components/Dashboard/Credential';
 import Createroom from '../src/components/Crudtable/Createroom';
 import Updateroom from '../src/components/Crudtable/Updateroom';
-
+import Bar from './components/Dashboard/Bar';
+import Information from './components/Dashboard/Information';
+import Room from './components/Dashboard/Room';
 import Portfolio from './components/portfolio/Portfolio';
+import Loginpage from './components/Loginpage';
 function App() {
   return (
     <div className='App'>
+      <Loginpage />
 
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Portfolio />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/dashboard/room" element={<Createroom />} />
-        <Route path="/dashboard/createroom" element={<Createroom />} />
-        <Route path="/dashboard/createroom" element={<Createroom />} />
-        <Route path="/dashboard/updateroom" element={<Updateroom />} />
-        <Route path="/dashboard/controler" element={<Controler />} />
-        <Route path="/dashboard/devices" element={<Devices />} />
-        <Route path="/dashboard/credential" element={<Credential />} />
+        <Route path="/dashboard">
+         
+          <Route path="" element={<Dashboard />} />
 
-      </Routes>
+          <Route
+            path="controler"
+            element={
+              <>
+                <div className="container-fluid">
+                  <div className="row gy-auto">
+                    <Bar />
+                    <Information />
+                    <Controler />
+                  </div>
+                </div>
+              </>
+            }
+          />
+          <Route
+            path="devices"
+            element={
+              <>
+                <div className="container-fluid">
+                  <div className="row gy-auto">
+                    <Bar />
+                    <Information />
+                    <Devices />
+                  </div>
+                </div>
+              </>
+            }
+          />
+          <Route
+            path="credential"
+            element={
+              <>
+                <div className="container-fluid">
+                  <div className="row gy-auto">
+                    <Bar />
+                    <Information />
+                    <Credential />
+                  </div>
+                </div>
+              </>
+            }
+          />
+        </Route>
+      </Routes> */}
+    </div>
 
-    </div >
 
   );
 }

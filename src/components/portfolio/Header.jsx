@@ -51,7 +51,7 @@ function Header() {
                                 <li className="nav-item"><a className="nav-link" href="#portfolio">Thiết bị </a></li>
                                 <li className="nav-item"><a className="nav-link" href="#about">Quá Trình</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#team">Creator</a></li>
-                                <Link to='/dashboard' className='link-underline-light link-underline-opacity-0'>
+                                <Link to='/dashboard ' className='link-underline-light link-underline-opacity-0'>
                                     <li className="nav-item"><a className='nav-link'  >Start Free</a></li>
                                 </Link>
 
